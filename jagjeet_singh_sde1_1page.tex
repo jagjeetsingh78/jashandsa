@@ -1,0 +1,173 @@
+%-------------------------
+% ONE-PAGE ATS Resume | Jagjeet Singh | SDE-1
+% Overleaf / pdfLaTeX
+%-------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+% Commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}
+  \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%===========================================
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Jagjeet Singh} \\ \vspace{3pt}
+    \small
+    \faPhone\ \href{tel:+917814239065}{+91-78142-39065} \;$|$\;
+    \faEnvelope\ \href{mailto:workforjagjeet@gmail.com}{workforjagjeet@gmail.com} \;$|$\;
+    \faLinkedin\ \href{https://linkedin.com/in/jagjeetsingh}{linkedin.com/in/jagjeetsingh} \;$|$\;
+    \faGithub\ \href{https://github.com/jagjeetsingh78}{github.com/jagjeetsingh78} \;$|$\;
+    \faCode\ \href{https://leetcode.com/}{leetcode.com/jagjeet}
+\end{center}
+
+\vspace{-8pt}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{B.Tech (ECE) student with \textbf{1+ year of internship experience} in mobile, web, and backend engineering. Solved \textbf{170+ LeetCode problems} (DSA in Java). Quick learner across stacks -- Flutter, React, Node.js, FastAPI. Seeking SDE-1 at a product-driven MNC.}
+
+\vspace{-4pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Guru Nanak Dev University, Amritsar}{Punjab, India}
+      {B.Tech -- Electronics and Communication Engineering $|$ \textbf{CGPA: 7.53}}{Aug 2023 -- May 2027}
+  \resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AGOMUC Program}{Delhi, India}
+      {Software Engineer Intern}{Dec 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built production cross-platform apps in \textbf{Flutter} from Figma designs using \textbf{BLoC} architecture.}
+        \resumeItem{Developed \textbf{RESTful APIs} with \textbf{FastAPI + MongoDB}; deployed serverless functions via \textbf{Firebase Cloud Functions}.}
+        \resumeItem{Integrated \textbf{Firebase Cloud Messaging (FCM)} for real-time push notifications across the mobile app.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Jasminder Web Services Point}{Kotkapura, Punjab}
+      {Flutter Developer Intern}{June 2025 -- Nov 2025}
+      \resumeItemListStart
+        \resumeItem{Delivered Flutter apps with \textbf{Firebase \& Supabase} integration using \textbf{GetX / Provider} state management.}
+        \resumeItem{Built admin dashboards with FlutterFlow; integrated third-party \textbf{REST APIs} and handled async data flows.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {\textbf{Get Well Go} -- Doctor Booking App $|$ \emph{Flutter, Node.js, Express.js, MongoDB, REST API}}{June -- July 2025}
+        \resumeItemListStart
+          \resumeItem{Full-stack app for doctor search and appointment booking with real-time slot availability.}
+          \resumeItem{Built JWT-authenticated REST APIs with Node.js/Express; modeled MongoDB schemas for bookings and users.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{MERN Stack Web App} $|$ \emph{React.js, Node.js, Express.js, MongoDB}}{2025}
+        \resumeItemListStart
+          \resumeItem{End-to-end MERN application with JWT auth, protected routing, and MongoDB Atlas cloud persistence.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages:} Java, Dart, JavaScript, Python, C++, HTML5, CSS3 \\[2pt]
+    \textbf{Mobile:} Flutter (BLoC, GetX, Provider, Riverpod), FlutterFlow, Android/Kotlin \textit{(learning)} \\[2pt]
+    \textbf{Web \& Backend:} React.js, Angular \textit{(learning)}, Node.js, Express.js, FastAPI, REST API Design \\[2pt]
+    \textbf{Databases \& Cloud:} MongoDB, Firebase, Supabase (PostgreSQL), MySQL, Firebase Cloud Functions \\[2pt]
+    \textbf{DSA:} \textbf{170+ LeetCode problems} -- Arrays, Trees, Graphs, DP, Recursion, Linked Lists \textit{(Java)} \\[2pt]
+    \textbf{Tools:} Git, GitHub, Postman, VS Code, Android Studio, Agile/Scrum
+    }}
+ \end{itemize}
+
+\vspace{-4pt}
+
+%-----------LEADERSHIP-----------
+\section{Leadership \& Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Electronics Student Forum -- Web \& Design Team}{GNDU, Amritsar}
+      {Member}{2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Managed department web presence and digital assets; co-organized technical events for 200+ students.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
